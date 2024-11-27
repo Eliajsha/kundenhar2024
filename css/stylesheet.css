@@ -1,0 +1,40 @@
+#wrapper {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 15% 30% 40% 15%;
+    grid-template-areas: 
+    'na hd hd'
+    '. sc2 as1'
+    'as2 sc1 .'
+    'ft ft ft'
+    ;
+}
+
+
+header {
+    grid-area: hd;
+}
+
+nav {
+    grid-area: na;
+}
+
+#sc1 {
+    grid-area: sc1;
+}
+
+#sc2 {
+    grid-area: sc2;
+}
+
+#as1 {
+    grid-area: as1;
+}
+
+#as2 {
+    grid-area: as2;
+}
+
+footer {
+    grid-area: ft;
+}
