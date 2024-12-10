@@ -69,13 +69,31 @@ h2 {
 
 /*------------------------------------------------------------------------*/
 
-#anställda {
+#omkring {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 15% 25% 25% 35%;
-    grid-template-areas: none
-    'i1 i2 i3 i4'
-    'i4 i6 i7 i8'
-    'i9 i10 i11 i12'
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: 15% 33% 33% 33%;
+    grid-area:
+    'na hd fi'
+    's1 s1 s1'
+    's2 s2 s2'
+    's3 s3 s3'
     ;
+    
 }
+
+#section1 {
+    grid-area: s1;
+    background-color: red;
+}
+
+#section2 {
+    grid-area: s2;
+    background-color: blue;
+}
+
+#section3 {
+    grid-area: s3;
+    background-color: violet;
+}
+
