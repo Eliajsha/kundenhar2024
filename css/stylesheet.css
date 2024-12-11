@@ -49,10 +49,10 @@ footer {
     grid-area: ft;
 }
 
-img {
+.imgind {
     width: 100%;
     height: 100%;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 #berg {
@@ -69,31 +69,103 @@ h2 {
 
 /*------------------------------------------------------------------------*/
 
+body {
+    background-color: #09588c;
+}
+
 #omkring {
     display: grid;
-    grid-template-columns: repeat(3, 25%);
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: 15% 33% 33% 33%;
-    grid-area:
-    'na hd fi'
-    's1 s1 s1'
-    's2 s2 s2'
-    's3 s3 s3'
+    grid-template-areas:
+    'naa hda fia'
+    's1 s2 s3'
+    's4 s5 s6'
+    's7 s8 s9'
     ;
-    
+    gap: 15px;
+}
+
+#headanstallda {
+    grid-area: hda;
+    background-color: #3498db;
+}
+
+#filler2 {
+    grid-area: fia;
+    background-color: aquamarine;
+}
+
+#navanstallda {
+    grid-area: naa;
+    background-color: aliceblue;
+}
+
+section {
+    border-radius: 30px;
+    border: 10px solid;
+    border-color:#1c4a69;
+    background-color: #3498db;
 }
 
 #section1 {
     grid-area: s1;
-    background-color: red;
 }
 
 #section2 {
     grid-area: s2;
-    background-color: blue;
 }
 
 #section3 {
     grid-area: s3;
-    background-color: violet;
 }
 
+#section4 {
+    grid-area: s4;
+}
+
+#section5 {
+    grid-area: s5;
+}
+
+#section6 {
+    grid-area: s6;
+}
+
+#section7 {
+    grid-area: s7;
+}
+
+#section8 {
+    grid-area: s8;
+}
+
+#section9{
+    grid-area: s9; 
+}
+
+.imgans {
+    margin-top: 1rem;
+    height: 50%;
+    border-radius: 20px;
+}
+
+#i1 {
+    display: flex;
+    justify-self: center;
+}
+
+#i2 {
+    display: flex;
+    justify-self: center;
+}
+
+p {
+    color: black;
+    text-align: left;
+}
+
+#bergit_h2 {
+    margin-top: 15px;
+    margin-bottom: -10px;
+}
