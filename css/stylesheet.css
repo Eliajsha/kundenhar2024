@@ -3,29 +3,41 @@
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 15% 40% 40%;
     grid-template-areas: 
-    'na hd fi'
+    'tpp tpp tpp'
     '. sc2 as1'
     'as2 sc1 .'
     ;
     row-gap: 15px;
 }
 
+#toppind {
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    'na hd fi'
+    ;
+    grid-area: tpp;
+    border-radius: 30px;
+    border: 10px solid;
+    border-color:#1c4a69;
+    background-color: #3498db;
+    padding: 5px;
+}
+
 
 header {
     grid-area: hd;
+    align-self: center;
     text-align: center;
-    background-color:  #3498db;
-    
 }
 
 #filler {
     grid-area: fi;
-    background-color:  #3498db;
 }
 
 nav {
     grid-area: na;
-    background-color:  #3498db;
 }
 
 #sc1 {
@@ -68,7 +80,7 @@ h2 {
     text-align: center;
 }
 
-/*------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------*/
 
 body {
     background-color: #09588c;
@@ -77,29 +89,42 @@ body {
 #omkring {
     display: grid;
     grid-template-columns: 33% 33% 32%;
-    grid-template-rows: 15% 33% 33% 33%;
+    grid-template-rows: 15% 35% 35% 15%;
     grid-template-areas:
-    'naa hda fia'
+    'tp tp tp'
     's1 s2 s3'
     's4 s5 s6'
-    's7 s8 s9'
+    'ft ft ft'
     ;
     gap: 15px;
 }
 
+#toppans {
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    'naa hda fia'
+    ;
+    grid-area: tp;
+    border-radius: 30px;
+    border: 10px solid;
+    border-color:#1c4a69;
+    background-color: #3498db;
+    padding: 5px;
+    
+}
+
 #headanstallda {
     grid-area: hda;
-    background-color: #3498db;
 }
 
 #filler2 {
     grid-area: fia;
-    background-color: aquamarine;
 }
 
 #navanstallda {
     grid-area: naa;
-    background-color: aliceblue;
 }
 
 section {
@@ -146,6 +171,18 @@ section {
     grid-area: s9; 
 }
 
+footer {
+    grid-area: ft;
+    background-color:#3498db;
+    border-radius: 30px;
+    border: 10px solid;
+    border-color: #1c4a69;
+}
+
+#foot {
+    text-align: center;
+}
+
 .imgans {
     margin-top: 1rem;
     height: 50%;
@@ -165,4 +202,82 @@ p {
 h2 {
     margin-top: 15px;
     margin-bottom: -10px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+#resewrap {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 15% 25% 25% 25%;
+    grid-template-areas: 
+    'top top top'
+    'sec1 sec2 sec3'
+    'sec4 sec5 sec6'
+    'sec7 sec8 sec9'
+    ;
+    gap: 15px;
+}
+
+#toppres {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    'nav head fil'
+    ;
+    grid-area: top;
+    grid-area: tp;
+    border-radius: 30px;
+    border: 10px solid;
+    border-color:#1c4a69;
+    background-color: #3498db;
+    padding: 5px;
+}
+
+#headresor {
+    grid-area: head;
+}
+
+#filler3 {
+    grid-area: fil;
+}
+
+#navresor {
+    grid-area: nav;
+}
+
+#sec1 {
+    grid-area: sec1;
+}
+
+#sec2 {
+    grid-area: sec2;
+}
+
+#sec3 {
+    grid-area: sec3;
+}
+
+#sec4 {
+    grid-area: sec4;
+}
+
+#sec5 {
+    grid-area: sec5;
+}
+
+#sec6 {
+    grid-area: sec6;
+}
+
+#sec7 {
+    grid-area: sec7;
+}
+
+#sec8 {
+    grid-area: sec8;
+}
+#sec9 {
+    grid-area: sec9;
 }
