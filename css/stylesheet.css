@@ -1,7 +1,51 @@
+
+/* för alla 3 sidor */
+
+* {
+    box-sizing: border-box  ;
+}
+body {
+    background-color: #09588c;
+}
+
+h1 {
+    font-size: 40px;
+}
+h2 {
+    margin-top: 15px;
+    margin-bottom: -10px;
+    text-align: center;
+    font-size: 28px;
+}
+
+p {
+    color: black;
+    text-align: left;
+    font-size: 18px;
+}
+
+section {
+    border-radius: 30px;
+    border: 10px solid;
+    border-color:#1c4a69;
+    background-color: #3498db;
+    padding: 10px;
+    contain: content;
+}
+
+img {
+    display: flex;
+    justify-self: center; 
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* Startsidan */
+
 #startsida {
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 15% 40% 40%;
+    grid-template-rows: 140px 40% 40%;
     grid-template-areas: 
     'tpp tpp tpp'
     '. sc2 as1'
@@ -58,10 +102,6 @@ nav {
     grid-area: as2;
 }
 
-footer {
-    grid-area: ft;
-}
-
 .imgind {
     width: 100%;
     height: 100%;
@@ -76,20 +116,14 @@ footer {
     width: 95%;
 }
 
-h2 {
-    text-align: center;
-}
-
 /*-------------------------------------------------------------------------------------------------*/
 
-body {
-    background-color: #09588c;
-}
+/* Sidan som innehåller de anställda */
 
 #omkring {
     display: grid;
     grid-template-columns: 33% 33% 32%;
-    grid-template-rows: 15% 35% 35% 15%;
+    grid-template-rows: 140px auto auto auto;
     grid-template-areas:
     'tp tp tp'
     's1 s2 s3'
@@ -97,6 +131,7 @@ body {
     'ft ft ft'
     ;
     gap: 15px;
+    
 }
 
 #toppans {
@@ -125,14 +160,6 @@ body {
 
 #navanstallda {
     grid-area: naa;
-}
-
-section {
-    border-radius: 30px;
-    border: 10px solid;
-    border-color:#1c4a69;
-    background-color: #3498db;
-    padding: 5px;
 }
 
 #section1 {
@@ -177,7 +204,10 @@ footer {
     border-radius: 30px;
     border: 10px solid;
     border-color: #1c4a69;
+    max-height: 5rem;
 }
+
+
 
 #foot {
     text-align: center;
@@ -187,29 +217,17 @@ footer {
     margin-top: 1rem;
     height: 50%;
     border-radius: 20px;
-}
-
-img {
-    display: flex;
-    justify-self: center;
-}
-
-p {
-    color: black;
-    text-align: left;
-}
-
-h2 {
-    margin-top: 15px;
-    margin-bottom: -10px;
+    max-height: 30rem;
+    max-width: 20rem;
 }
 
 /*--------------------------------------------------------------------------------------------------*/
 
+/* Sidan med alla anställda */
 #resewrap {
     display: grid;
     grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 15% 25% 25% 25%;
+    grid-template-rows: 140px 25% 25% 25%;
     grid-template-areas: 
     'top top top'
     'sec1 sec2 sec3'
@@ -227,7 +245,6 @@ h2 {
     'nav head fil'
     ;
     grid-area: top;
-    grid-area: tp;
     border-radius: 30px;
     border: 10px solid;
     border-color:#1c4a69;
