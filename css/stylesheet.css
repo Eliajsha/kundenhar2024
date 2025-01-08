@@ -6,23 +6,36 @@
 }
 body {
     background-color: #09588c;
+}
 
+nav {
+    display: flex;
+    border-radius: 15px;
+    padding: 15px;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
 }
+
 h2 {
     margin-top: 15px;
     margin-bottom: -10px;
     text-align: center;
-    font-size: 28px;
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 23px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 p {
     color: black;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 section {
@@ -32,11 +45,28 @@ section {
     background-color: #3498db;
     padding: 10px;
     contain: content;
-}
+} 
 
 img {
-    display: flex;
-    justify-self: center; 
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:hover {
+    background-color:#4ca3dc;
+    border-color:#003d66;
+}
+
+button:hover {
+    background-color:#4ca3dc;
+    border-color:#003d66;
 }
 
 /*-----------------------------------------------------------------------------------------*/
@@ -57,7 +87,7 @@ img {
 
 #toppind {
     display: grid;
-    grid-template-columns: 33% 33% 34%;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: 100%;
     grid-template-areas: 
     'na hd fi'
@@ -81,8 +111,20 @@ header {
     grid-area: fi;
 }
 
-nav {
+#indexnav {
     grid-area: na;
+}
+
+.indexlank {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: 5px;
+    border: 5px solid;
+    border-color:#1c4a69;
+    background-color:#67c2ff;
 }
 
 #sc1 {
@@ -137,7 +179,7 @@ nav {
 
 #toppans {
     display: grid;
-    grid-template-columns: 33% 33% 34%;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: 100%;
     grid-template-areas: 
     'naa hda fia'
@@ -161,6 +203,18 @@ nav {
 
 #navanstallda {
     grid-area: naa;
+}
+
+.anstlank {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: 5px;
+    border: 5px solid;
+    border-color:#1c4a69;
+    background-color:#67c2ff;
 }
 
 #section1 {
@@ -228,7 +282,7 @@ footer {
 #resewrap {
     display: grid;
     grid-template-columns: 29% 40% 29%;
-    grid-template-rows: 140px 25% 25% 25%;
+    grid-template-rows: 140px auto auto auto;
     grid-template-areas: 
     'top top top'
     'sec1 sec2 sec3'
@@ -240,7 +294,7 @@ footer {
 
 #toppres {
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 33% 33% 30%;
     grid-template-rows: 100%;
     grid-template-areas: 
     'nav head fil'
@@ -264,6 +318,31 @@ footer {
 #navresor {
     grid-area: nav;
 }
+
+.reselank {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: 5px;
+    border: 5px solid;
+    border-color:#1c4a69;
+    background-color:#67c2ff;
+}
+
+.kopknapp {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: 5px;
+    border: 5px solid;
+    border-color:#1c4a69;
+    background-color:#67c2ff;
+    width: 8rem;
+    cursor: pointer;
+    }
 
 .resesec {
     padding-top: 0;
@@ -310,4 +389,12 @@ footer {
     border-radius: 20px;
     max-height: 15rem;
     max-width: 30rem;
+}
+
+.imgresmitt {
+    margin-top: 1rem;
+    height: 50%;
+    border-radius: 20px;
+    max-height: 15rem;
+    max-width: 28.5rem;
 }
